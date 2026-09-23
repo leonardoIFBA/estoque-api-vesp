@@ -22,7 +22,7 @@ public class Movimentacao {
     @JoinColumn(name = "cliente_id_fk")
     private Cliente cliente;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "produto_id_fk")
     private Produto produto;
 }
